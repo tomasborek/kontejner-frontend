@@ -1,0 +1,14 @@
+.menu_overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #141414;
+  color: white;
+  left: -100vw;
+  transition: all 500ms;
+  z-index: 5;
+
+  &.active {
+    left: 0;
+  }
+}
