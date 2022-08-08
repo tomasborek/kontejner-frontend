@@ -13,9 +13,7 @@ const Footer = () => {
             alt=""
           />
           <div className={style.contact}>
-            <div className={style.item}>
-              Ortenovo náměstí 169, Praha&nbsp;<span>7</span>
-            </div>
+            <div className={style.item}>Ortenovo náměstí 169, Praha 7</div>
             <div className={style.item}>
               <i className="fas fa-phone"></i>
               <p>
