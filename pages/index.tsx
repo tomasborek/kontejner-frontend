@@ -34,7 +34,7 @@ export default function Home() {
 const AboutSection = () => {
   const base = useRef(null);
   return (
-    <section className={style.about}>
+    <section className={`${style.about} about-section`}>
       <Containers ref={base} />
 
       <div className={style.text}>
@@ -73,7 +73,7 @@ const CoffeeSection = () => {
     }
   }, [inView]);
   return (
-    <section className={style.coffee}>
+    <section className={`${style.coffee} coffee-section`}>
       <img className={style.bg} src={"/img/beans/beans_bg.png"} />
       <div className="container">
         <div className={style.text}>
@@ -111,7 +111,7 @@ const CoffeeSection = () => {
 
 const ReferencesSection = () => {
   return (
-    <section className={`${style.references}`}>
+    <section className={`${style.references} references-section`}>
       <div className={style.text}>
         <h2>_psali o nás</h2>
       </div>

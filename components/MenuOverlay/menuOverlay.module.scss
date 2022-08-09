@@ -7,8 +7,26 @@
   left: -100vw;
   transition: all 500ms;
   z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.active {
     left: 0;
+  }
+
+  ul {
+    font-size: 3rem;
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 1rem 0;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 }
