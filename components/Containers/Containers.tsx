@@ -6,6 +6,7 @@ const Containers = React.forwardRef((props, ref) => {
   const upperPart = useRef(null);
   const base: any = ref;
   const craneHook = useRef(null);
+  const logoContainer = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -34,19 +35,22 @@ const Containers = React.forwardRef((props, ref) => {
     } else {
       upperPart.current.style.opacity = 1;
     }
+    const touchingPoint = baseBox.top + scrollTop + baseBox.height / 5;
+    const upperPartAbsoluteBottom = upperBox.bottom + scrollTop;
 
-    if (
-      upperBox.bottom - baseBox.top <= baseBox.height / 4 ||
-      scrollTop < stoppingPoint
-    ) {
+    if (upperPartAbsoluteBottom <= touchingPoint || scrollTop < stoppingPoint) {
       upperPart.current.style.top = `${scrollTop * scrollSpeed}px`;
       setStoppingPoint(null);
       craneHook.current.style.opacity = 1;
-    } else if (stoppingPoint === null) {
-      craneHook.current.style.opacity = 0;
-      setStoppingPoint(scrollTop);
     } else {
-      craneHook.current.style.opacity = 0;
+      upperPart.current.style.top = `${
+        touchingPoint - upperBox.height + 112
+      }px`;
+      if (stoppingPoint === null) {
+        setStoppingPoint(scrollTop);
+      } else {
+        craneHook.current.style.opacity = 0;
+      }
     }
   };
   return (
@@ -58,6 +62,7 @@ const Containers = React.forwardRef((props, ref) => {
           src="/img/containers/crane-hook.png"
         />
         <img
+          ref={logoContainer}
           className={style.upper_container}
           src="/img/containers/container-upper.png"
         />
