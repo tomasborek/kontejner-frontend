@@ -16,6 +16,7 @@ const Banner = () => {
             ],
             autoStart: true,
             loop: true,
+            deleteSpeed: 2,
           }}
         />
       </h2>
