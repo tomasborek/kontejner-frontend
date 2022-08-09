@@ -6,7 +6,7 @@ const Loader = () => {
       <img src={"/media/neon.webp"} />
       <picture>
         <source src="/media/neon.webp" type="picture/webp" />
-        <source src="/logos/kontejner-logo.png" type="picture/png" />
+        <source src="/logos/neon.gif" type="picture/gif" />
       </picture>
     </div>
   );
