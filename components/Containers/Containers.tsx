@@ -24,18 +24,21 @@ const Containers = React.forwardRef((props, ref) => {
   const handleScroll = () => {
     const scrollTop = window.pageYOffset;
     const width = window.innerWidth;
+    const isPhone = width < 750;
     const baseBox = base.current.getBoundingClientRect();
     const upperBox = upperPart.current.getBoundingClientRect();
     const baseVisible = baseBox.top < window.innerHeight - baseBox.height;
     //On mobile devices, the scroll speed of the containers is sped up to 0.85
-    const scrollSpeed = width < 750 ? 0.85 : 0.75;
+    const scrollSpeed = isPhone ? 0.85 : 0.75;
     //On mobile devices, container is initially invisible
-    if (!baseVisible && width < 750) {
+    if (!baseVisible && isPhone) {
       upperPart.current.style.opacity = 0;
     } else {
       upperPart.current.style.opacity = 1;
     }
-    const touchingPoint = baseBox.top + scrollTop + baseBox.height / 5;
+    const touchingPoint = isPhone
+      ? baseBox.top + scrollTop
+      : baseBox.top + scrollTop + baseBox.height / 6;
     const upperPartAbsoluteBottom = upperBox.bottom + scrollTop;
 
     if (upperPartAbsoluteBottom <= touchingPoint || scrollTop < stoppingPoint) {

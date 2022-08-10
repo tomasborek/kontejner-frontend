@@ -10,7 +10,6 @@
   transform: translate(-50%, 0);
   .upper_containers {
     transition: opacity 500ms;
-    // padding: inherit;
     position: absolute;
     top: 0;
     right: 0;
@@ -30,13 +29,11 @@
       z-index: 1;
       position: relative;
       top: 2rem;
-      // right: -1rem;
     }
     .upper_container {
       width: 100%;
       position: relative;
       z-index: 2;
-      // right: -1rem;
       filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
     }
   }
