@@ -75,10 +75,10 @@ const CoffeeSection = () => {
         <div className={style.text}>
           <h2>_o kavárně</h2>
           <p>
-            _kromě unikátní budovy, se zde podává unikátní káva od libereckých
-            Nordbeans, lahodné deserty pro lepší náladu a každý den snídaně či
-            brunch. Zastavte se tak ochutnat kávu nebo něco zakousnout nevim
-            nevim
+            _kromě unikátní budovy, se zde podává skvělá výběrová káva od
+            liberecké pražírny Nordbeans, kterou můžete zapít naše lahodné
+            deserty, snídaně či brunch. Za kvalitu našich pokrmů ručíme.
+            Zpříjemněte si den a zastavte se u nás na šálek dobré kávy.
           </p>
         </div>
         <div ref={ref} className={style.photos}>
