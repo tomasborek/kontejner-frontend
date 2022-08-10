@@ -13,18 +13,12 @@ export default function Home() {
   return (
     <div className={style.home}>
       <Header />
-      <div className="container">
-        <Banner />
-      </div>
+      <Banner />
       <div className={style.content}>
-        <div className="container">
-          <AboutSection />
-          <Axonometric />
-        </div>
+        <AboutSection />
+        <Axonometric />
         <CoffeeSection />
-        <div className="container">
-          <ReferencesSection />
-        </div>
+        <ReferencesSection />
       </div>
       <Footer />
     </div>
@@ -35,30 +29,32 @@ const AboutSection = () => {
   const base = useRef(null);
   return (
     <section className={`${style.about} about-section`}>
-      <Containers ref={base} />
+      <div className={`container ${style.container}`}>
+        <Containers ref={base} />
 
-      <div className={style.text}>
-        <h2>_o stavbě</h2>
-        <p>
-          _v srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
-          recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
-          odkazuje k průmyslové historii Holešovic. Svým obsahem navazuje na
-          současné proměny této městské čtvrti. Hrubá, černá skořápka skrývá
-          příjemnou městskou kavárnu, jež se velkoplošným prosklením v průřezech
-          starých a omlácených kontejnerů otevírá svému okolí.
-          <br /> <br />O stavbu se postaral tým{" "}
-          <Link href="https://www.collarch.cz/" passHref>
-            <a target={"_blank"}>Collarch</a>
-          </Link>{" "}
-          studio.
-        </p>
-      </div>
-      <div className={style.containers}>
-        <img
-          ref={base}
-          className={style.base}
-          src="/img/containers/container-base.png"
-        />
+        <div className={style.text}>
+          <h2>_o stavbě</h2>
+          <p>
+            _v srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
+            recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
+            odkazuje k průmyslové historii Holešovic. Svým obsahem navazuje na
+            současné proměny této městské čtvrti. Hrubá, černá skořápka skrývá
+            příjemnou městskou kavárnu, jež se velkoplošným prosklením v
+            průřezech starých a omlácených kontejnerů otevírá svému okolí.
+            <br /> <br />O stavbu se postaral tým{" "}
+            <Link href="https://www.collarch.cz/" passHref>
+              <a target={"_blank"}>Collarch</a>
+            </Link>{" "}
+            studio.
+          </p>
+        </div>
+        <div className={style.containers}>
+          <img
+            ref={base}
+            className={style.base}
+            src="/img/containers/container-base.png"
+          />
+        </div>
       </div>
     </section>
   );
@@ -112,44 +108,46 @@ const CoffeeSection = () => {
 const ReferencesSection = () => {
   return (
     <section className={`${style.references} references-section`}>
-      <div className={style.text}>
-        <h2>_psali o nás</h2>
-      </div>
-      <div className={style.items}>
-        <Link
-          href="https://www.idnes.cz/bydleni/na-navsteve/kavarna-kontejner-stavba-z-kontejneru-kafe-holesovice-praha-namesti-collarch.A211116_115917_dum_osobnosti_web"
-          passHref
-        >
-          <a target={"_blank"} className={style.item}>
-            <img src="/img/references_logos/idnes.png" />
-          </a>
-        </Link>
-        <Link
-          href="https://cc.cz/postavili-ji-ze-tri-lodnich-kontejneru-ted-netradicni-kavarna-v-holesovicich-ziskala-architektonickou-cenu/"
-          passHref
-        >
-          <a target={"_blank"} className={style.item}>
-            <img src="/img/references_logos/czechcrunch.png" />
-          </a>
-        </Link>
-        {/* <Link href="https://google.com" passHref>
+      <div className="container">
+        <div className={style.text}>
+          <h2>_psali o nás</h2>
+        </div>
+        <div className={style.items}>
+          <Link
+            href="https://www.idnes.cz/bydleni/na-navsteve/kavarna-kontejner-stavba-z-kontejneru-kafe-holesovice-praha-namesti-collarch.A211116_115917_dum_osobnosti_web"
+            passHref
+          >
+            <a target={"_blank"} className={style.item}>
+              <img src="/img/references_logos/idnes.png" />
+            </a>
+          </Link>
+          <Link
+            href="https://cc.cz/postavili-ji-ze-tri-lodnich-kontejneru-ted-netradicni-kavarna-v-holesovicich-ziskala-architektonickou-cenu/"
+            passHref
+          >
+            <a target={"_blank"} className={style.item}>
+              <img src="/img/references_logos/czechcrunch.png" />
+            </a>
+          </Link>
+          {/* <Link href="https://google.com" passHref>
           <a target={"_blank"} className={style.item}>
             <img src="/img/references_logos/arch_daily.png" />
-          </a>
-        </Link> */}
-        <Link href="https://www.archiweb.cz/b/kavarna-kontejner" passHref>
-          <a target={"_blank"} className={style.item}>
-            <img src="/img/references_logos/archiweb.png" />
-          </a>
-        </Link>
-        <Link
-          href="https://www.earch.cz/architektura/clanek/kavarna-jako-industrialni-pavilon-mesta-holesovicke-namesti-ozivila-kavarna-z-lodnich-kontejneru"
-          passHref
-        >
-          <a target={"_blank"} className={style.item}>
-            <img src="/img/references_logos/earch.png" />
-          </a>
-        </Link>
+            </a>
+          </Link> */}
+          <Link href="https://www.archiweb.cz/b/kavarna-kontejner" passHref>
+            <a target={"_blank"} className={style.item}>
+              <img src="/img/references_logos/archiweb.png" />
+            </a>
+          </Link>
+          <Link
+            href="https://www.earch.cz/architektura/clanek/kavarna-jako-industrialni-pavilon-mesta-holesovicke-namesti-ozivila-kavarna-z-lodnich-kontejneru"
+            passHref
+          >
+            <a target={"_blank"} className={style.item}>
+              <img src="/img/references_logos/earch.png" />
+            </a>
+          </Link>
+        </div>
       </div>
     </section>
   );
