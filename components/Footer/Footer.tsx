@@ -19,8 +19,8 @@ const Footer = () => {
           />
           <div className={style.contact}>
             <div className={style.item}>Ortenovo náměstí 169, Praha 7</div>
-            <div className={style.item}>Po-Pá 8:00 - 19:00</div>
-            <div className={style.item}>So-Ne 10:00 - 18:00</div>
+            <div className={style.item}>Po-Pá 8:00-19:00</div>
+            <div className={style.item}>So-Ne 10:00-18:00</div>
             <div className={style.item}>
               <i className="fas fa-phone"></i>
               <p>
