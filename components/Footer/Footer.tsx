@@ -10,7 +10,12 @@ const Footer = () => {
           <img
             className={style.logo}
             src="/img/logos/kontejner-logo.png"
-            alt=""
+            onClick={() => {
+              scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
           />
           <div className={style.contact}>
             <div className={style.item}>Ortenovo náměstí 169, Praha 7</div>
