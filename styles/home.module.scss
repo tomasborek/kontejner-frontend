@@ -66,19 +66,19 @@
 
   section.coffee {
     position: relative;
+    margin: 3rem 0 !important;
     .bg {
       position: absolute;
       top: 0;
       left: 50%;
       width: 100%;
       max-width: 1500px;
-      max-height: 100%;
       transform: translate(-50%, 0);
       pointer-events: none;
     }
 
     .text {
-      padding-top: 6rem;
+      padding-top: 3rem;
     }
 
     .photos {
@@ -145,18 +145,48 @@
   }
 
   .parallax {
-    width: 100%;
-    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    overflow: hidden;
-    background-image: url("/img/kontejner_sun.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(65%);
+
+    /* Set a specific height */
+    min-height: 700px;
+
     &::before {
-      opacity: 0.1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background-image: url("/img/kontejner_side.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 50%;
+    }
+    .overlay {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) -20%,
+        rgba(19, 33, 60, 0) 100%
+      );
+    }
+    .text {
+      position: relative;
+      z-index: 2;
+      h2,
+      h3 {
+        text-align: center;
+      }
     }
   }
 }
