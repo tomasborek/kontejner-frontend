@@ -1,18 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Anonymous Pro";
-  src: url("/fonts/AnonymousPro/Anonymous Pro.ttf") format("truetype");
-}
-
 body {
   min-height: 100vh;
   background-color: #141414;
-  font-family: "Anonymous Pro", sans-serif;
+  font-family: "Cambay", sans-serif;
   overflow-x: hidden;
 }
 
