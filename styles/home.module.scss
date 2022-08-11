@@ -19,6 +19,7 @@
   }
 
   section.about {
+    margin-bottom: 6rem !important;
     @media screen and (max-width: 750px) {
       margin-bottom: 6rem;
     }
