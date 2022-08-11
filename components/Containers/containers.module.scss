@@ -4,11 +4,13 @@
   padding: 0 1rem;
   max-width: 1200px;
   position: absolute;
-  top: -5rem;
+  top: 0rem;
   height: 2rem;
   left: 50%;
   transform: translate(-50%, 0);
   .upper_containers {
+    display: flex;
+    flex-direction: column;
     transition: opacity 500ms;
     position: absolute;
     top: 0;
@@ -28,13 +30,13 @@
       width: 100%;
       z-index: 1;
       position: relative;
-      top: 2rem;
     }
     .upper_container {
       width: 100%;
       position: relative;
       z-index: 2;
       filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+      bottom: 2rem;
     }
   }
 }

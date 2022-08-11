@@ -36,21 +36,22 @@ const Containers = React.forwardRef((props, ref) => {
     } else {
       upperPart.current.style.opacity = 1;
     }
-    const touchingPoint = isPhone
-      ? baseBox.top + scrollTop
-      : baseBox.top + scrollTop + baseBox.height / 6;
+    const touchingPoint = baseBox.top + scrollTop + baseBox.height / 4;
     const upperPartAbsoluteBottom = upperBox.bottom + scrollTop;
-
-    if (upperPartAbsoluteBottom <= touchingPoint || scrollTop < stoppingPoint) {
+    //Parallax
+    if (upperPartAbsoluteBottom <= touchingPoint) {
       upperPart.current.style.top = `${scrollTop * scrollSpeed}px`;
       setStoppingPoint(null);
       craneHook.current.style.opacity = 1;
+    } else if (scrollTop < stoppingPoint) {
+      upperPart.current.style.top = `${scrollTop * scrollSpeed}px`;
+      craneHook.current.style.opacity = 1;
     } else {
       upperPart.current.style.top = `${
-        touchingPoint - upperBox.height + 112
+        touchingPoint - upperBox.height + 32 + 1
       }px`;
       if (stoppingPoint === null) {
-        setStoppingPoint(scrollTop);
+        setStoppingPoint(scrollTop + 32 + 1);
       } else {
         craneHook.current.style.opacity = 0;
       }
