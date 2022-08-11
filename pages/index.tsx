@@ -19,10 +19,13 @@ export default function Home() {
         <Axonometric />
         <div className={style.parallax}>
           <div className={style.overlay}></div>
+
           <div className={style.text}>
-            <h2>Ortenovo náměstí 169, Praha 7</h2>
-            <h3 className={style.item}>Po-Pá 8:00-19:00</h3>
-            <h3 className={style.item}>So-Ne 10:00-18:00</h3>
+            <div className="container">
+              <h2>Ortenovo náměstí 169, Praha 7</h2>
+              <h3 className={style.item}>Po-Pá 8:00-19:00</h3>
+              <h3 className={style.item}>So-Ne 10:00-18:00</h3>
+            </div>
           </div>
         </div>
         <CoffeeSection />
