@@ -4,8 +4,9 @@ const Loader = () => {
   return (
     <div className={style.loader}>
       <picture>
-        <source src="/media/neon.webp" type="picture/webp" />
-        <source src="/logos/neon.gif" type="picture/gif" />
+        <source srcSet="/media/neon.webp" type="image/webp" />
+        <source srcSet="/media/neon.gif" type="image/gif" />
+        <img src="/media/neon.webp" />
       </picture>
     </div>
   );
