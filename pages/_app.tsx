@@ -8,7 +8,6 @@ import Loader from "../components/Loader/Loader";
 function MyApp({ Component, pageProps }) {
   const [loader, setLoader] = useState<boolean>(true);
   useEffect(() => {
-    document.querySelector("body").style.overflowY = "hidden";
     setTimeout(() => {
       setLoader(false);
       document.querySelector("body").style.overflowY = "scroll";

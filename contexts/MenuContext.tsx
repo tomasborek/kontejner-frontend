@@ -8,8 +8,11 @@ export const useMenu = () => {
 
 const MenuProvider = ({ children }) => {
   const [open, setOpen] = useState<boolean>(false);
+  const [loaded, setLoaded] = useState<boolean>(false);
   useEffect(() => {
-    if (open) {
+    if (!loaded) {
+      setLoaded(true);
+    } else if (open) {
       document.querySelector("body").style.overflowY = "hidden";
     } else {
       document.querySelector("body").style.overflowY = "scroll";
