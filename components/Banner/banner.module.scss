@@ -10,7 +10,6 @@
   h1 {
     z-index: 2;
     font-size: 48px;
-    margin-bottom: 1rem;
     position: relative;
     @media screen and (max-width: 750px) {
       text-align: center;
@@ -18,7 +17,7 @@
   }
   h2 {
     z-index: 2;
-    font-weight: lighter;
+    font-weight: normal;
     position: relative;
     max-height: 24px;
     @media screen and (max-width: 750px) {
