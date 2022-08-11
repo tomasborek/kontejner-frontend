@@ -146,9 +146,6 @@
   }
 
   .parallax {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 
     /* Set a specific height */
@@ -166,6 +163,9 @@
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 50%;
+      @media screen and (max-width: 750px) {
+        background-attachment: scroll;
+      }
     }
     .overlay {
       z-index: 1;
@@ -180,14 +180,6 @@
         rgba(0, 0, 0, 1) -20%,
         rgba(19, 33, 60, 0) 100%
       );
-    }
-    .text {
-      position: relative;
-      z-index: 2;
-      h2,
-      h3 {
-        text-align: center;
-      }
     }
   }
 }
