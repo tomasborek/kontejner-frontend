@@ -3,9 +3,10 @@
 }
 
 .content {
+  margin-top: 12rem;
   color: white;
   section {
-    margin: 6rem 0;
+    margin: 8rem 0;
 
     .text {
       h2 {
@@ -19,7 +20,6 @@
   }
 
   section.about {
-    margin-top: 12rem !important;
     .container {
       display: flex;
       justify-content: space-between;
@@ -64,7 +64,7 @@
 
   section.coffee {
     position: relative;
-    margin: 3rem 0 !important;
+    margin-top: 5rem 0;
     .bg {
       position: absolute;
       top: 0;
