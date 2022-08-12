@@ -145,6 +145,9 @@
 
   .parallax {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* Set a specific height */
     min-height: 700px;
@@ -178,6 +181,9 @@
         rgba(0, 0, 0, 1) -20%,
         rgba(19, 33, 60, 0) 100%
       );
+    }
+    img {
+      z-index: 2;
     }
   }
 }

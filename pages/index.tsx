@@ -19,6 +19,7 @@ export default function Home() {
         <Axonometric />
         <div className={style.parallax}>
           <div className={style.overlay}></div>
+          <img src="/img/logos/sketch_logo.png" />
         </div>
         <CoffeeSection />
         <ReferencesSection />
@@ -55,7 +56,7 @@ const AboutSection = () => {
           <img
             ref={base}
             className={style.base}
-            src="/img/containers/container-base.png"
+            src="/img/containers/two-bases.png"
           />
         </div>
       </div>
