@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./header.module.scss";
-import { Sling as Hamburger } from "hamburger-react";
+import { Spin as Hamburger } from "hamburger-react";
 import { useMenu } from "../../contexts/MenuContext";
 
 const Header = () => {
