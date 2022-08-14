@@ -23,7 +23,6 @@ const Containers = React.forwardRef((props, ref) => {
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    console.log(scrollTop);
     const width = window.innerWidth;
     const isPhone = width < 750;
     const baseBox = base.current.getBoundingClientRect();
@@ -51,7 +50,7 @@ const Containers = React.forwardRef((props, ref) => {
       //Put the upper part on top of the base if we scroll to touching point
       //+32 because of padding of 2rem
       upperPart.current.style.top = `${touchingPoint - upperBox.height + 32}px`;
-      if (stoppingPoint === null) {
+      if (stoppingPoint === null && scrollTop < touchingPoint) {
         setStoppingPoint(scrollTop + 32);
       } else {
         craneHook.current.style.opacity = 0;
