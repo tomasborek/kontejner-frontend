@@ -34,6 +34,9 @@ footer.footer {
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
+        &:nth-child(2) {
+          margin-bottom: 0.5rem;
+        }
 
         i {
           margin-right: 0.5rem;

@@ -22,7 +22,8 @@ const Containers = React.forwardRef((props, ref) => {
   }, []);
 
   const handleScroll = () => {
-    const scrollTop = window.pageYOffset;
+    const scrollTop = window.scrollY;
+    console.log(scrollTop);
     const width = window.innerWidth;
     const isPhone = width < 750;
     const baseBox = base.current.getBoundingClientRect();
@@ -37,21 +38,21 @@ const Containers = React.forwardRef((props, ref) => {
       upperPart.current.style.opacity = 1;
     }
     const touchingPoint = baseBox.top + scrollTop + baseBox.height / 4;
-    const upperPartAbsoluteBottom = upperBox.bottom + scrollTop;
-    //Parallax
-    if (upperPartAbsoluteBottom <= touchingPoint) {
+    //If upperbox is above touching point
+    if (upperBox.bottom + scrollTop < touchingPoint) {
       upperPart.current.style.top = `${scrollTop * scrollSpeed}px`;
       setStoppingPoint(null);
       craneHook.current.style.opacity = 1;
+      //If the boxes are stacked on top of each other and we are scrolling up to unstack them
     } else if (scrollTop < stoppingPoint) {
       upperPart.current.style.top = `${scrollTop * scrollSpeed}px`;
       craneHook.current.style.opacity = 1;
     } else {
-      upperPart.current.style.top = `${
-        touchingPoint - upperBox.height + 32 + 1
-      }px`;
+      //Put the upper part on top of the base if we scroll to touching point
+      //+32 because of padding of 2rem
+      upperPart.current.style.top = `${touchingPoint - upperBox.height + 32}px`;
       if (stoppingPoint === null) {
-        setStoppingPoint(scrollTop + 32 + 1);
+        setStoppingPoint(scrollTop + 32);
       } else {
         craneHook.current.style.opacity = 0;
       }
