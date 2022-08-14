@@ -47,9 +47,8 @@ const AboutSection = () => {
             průřezech starých a omlácených kontejnerů otevírá svému okolí.
             <br /> <br />O stavbu se postaral tým{" "}
             <Link href="https://www.collarch.cz/" passHref>
-              <a target={"_blank"}>Collarch</a>
-            </Link>{" "}
-            studio.
+              <a target={"_blank"}>Collarch studio.</a>
+            </Link>
           </p>
         </div>
         <div className={style.containers}>
