@@ -39,7 +39,7 @@ const AboutSection = () => {
         <div className={style.text}>
           <h2>_o stavbě</h2>
           <p>
-            _v srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
+            V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
             recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
             odkazuje k průmyslové historii Holešovic. Svým obsahem navazuje na
             současné proměny této městské čtvrti. Hrubá, černá skořápka skrývá
@@ -79,7 +79,7 @@ const CoffeeSection = () => {
         <div className={style.text}>
           <h2>_o kavárně</h2>
           <p>
-            _kromě unikátní budovy, se zde podává skvělá výběrová káva od
+            Kromě unikátní budovy, se zde podává skvělá výběrová káva od
             liberecké pražírny Nordbeans, kterou můžete zapít naše lahodné
             deserty, snídaně či brunch. Za kvalitu našich pokrmů ručíme.
             Zpříjemněte si den a zastavte se u nás na šálek dobré kávy.
