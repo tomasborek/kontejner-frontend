@@ -37,7 +37,7 @@ const AboutSection = () => {
         <Containers ref={base} />
 
         <div className={style.text}>
-          <h2>_o stavbě</h2>
+          <h2>o stavbě</h2>
           <p>
             V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
             recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
@@ -77,7 +77,7 @@ const CoffeeSection = () => {
       <img className={style.bg} src={"/img/beans/beans_bg.png"} />
       <div className="container">
         <div className={style.text}>
-          <h2>_o kavárně</h2>
+          <h2>o kavárně</h2>
           <p>
             Kromě unikátní budovy, se zde podává skvělá výběrová káva od
             liberecké pražírny Nordbeans, kterou můžete zapít naše lahodné
@@ -114,7 +114,7 @@ const ReferencesSection = () => {
     <section className={`${style.references} references-section`}>
       <div className="container">
         <div className={style.text}>
-          <h2>_psali o nás</h2>
+          <h2>psali o nás</h2>
         </div>
         <div className={style.items}>
           <Link

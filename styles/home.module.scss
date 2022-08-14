@@ -8,14 +8,23 @@
   section {
     margin: 8rem 0;
 
-    .text {
-      h2 {
-        font-weight: bold;
-        margin-bottom: 1rem;
+    h2 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      &::before {
+        content: "";
+        position: relative;
+        top: 3px;
+        width: 0.75rem;
+        height: 2px;
+        background-color: white;
+        display: inline-block;
+        margin-right: 3px;
       }
-      p {
-        line-height: 27px;
-      }
+    }
+
+    p {
+      line-height: 27px;
     }
   }
 
