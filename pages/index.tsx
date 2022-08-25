@@ -19,7 +19,7 @@ export default function Home() {
         <Axonometric />
         <div className={style.parallax}>
           <div className={style.overlay}></div>
-          <img src="/img/logos/sketch_logo.png" />
+          <img src="/img/logos/sketch_logo.png" alt="Kontejner logo" />
         </div>
         <CoffeeSection />
         <ReferencesSection />
@@ -90,17 +90,17 @@ const CoffeeSection = () => {
             animate={{ x: visible ? 0 : "50%", rotate: visible ? 0 : -10 }}
             transition={{ duration: 1, delay: 0 }}
           >
-            <img src="/img/coffee_photos/brunch.jpg" />
+            <img src="/img/coffee_photos/brunch.jpg" alt="Brunch" />
           </motion.div>
           <div>
-            <img src="/img/coffee_photos/snidane.jpg" />
+            <img src="/img/coffee_photos/snidane.jpg" alt="Snídaně" />
           </div>
           <motion.div
             initial={{ x: "-50%", rotate: 10 }}
             animate={{ x: visible ? 0 : "-50%", rotate: visible ? 0 : 10 }}
             transition={{ duration: 1, delay: 0 }}
           >
-            <img src="/img/coffee_photos/svarak.jpg" />
+            <img src="/img/coffee_photos/svarak.jpg" alt="Svařák" />
           </motion.div>
         </div>
       </div>
