@@ -17,7 +17,22 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>_kontejner | Kavárna v srdci holešovic</title>
+        <title>Kontejner | Kavárna v srdci holešovic</title>
+        <meta
+          name="description"
+          content="Skvělá výběrová káva, kterou můžete zapít naše lahodné
+            deserty, snídaně či brunch a to vše v unikátní kontejnerové stavbě v srdci Holešovic na Ortenově náměstí."
+        />
+        <meta
+          property="og:title"
+          content="Kontejner | Kavárna v srdci holešovic"
+        />
+        <meta
+          property="og:description"
+          content="Skvělá výběrová káva, kterou můžete zapít naše lahodné
+            deserty, snídaně či brunch a to vše v unikátní kontejnerové stavbě v srdci Holešovic na Ortenově náměstí."
+        />
+        <meta property="og:image" content="/img/kontejner_sun.jpg" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
