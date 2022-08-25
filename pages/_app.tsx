@@ -30,6 +30,7 @@ function MyApp({ Component, pageProps }) {
           type="image/png"
           href="/img/logos/kontejner-logo-favicon.png"
         />
+        <meta name="format-detection" content="telephone=no"></meta>
       </Head>
 
       <MenuProvider>
