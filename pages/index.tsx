@@ -41,10 +41,11 @@ const AboutSection = () => {
           <p>
             V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
             recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
-            odkazuje k průmyslové historii Holešovic. Svým obsahem navazuje na
-            současné proměny této městské čtvrti. Hrubá, černá skořápka skrývá
-            příjemnou městskou kavárnu, jež se velkoplošným prosklením v
-            průřezech starých a omlácených kontejnerů otevírá svému okolí.
+            odkazuje k průmyslové historii Holešovic. <br /> Svým obsahem
+            navazuje na současné proměny této městské čtvrti. Hrubá, černá
+            skořápka skrývá příjemnou městskou kavárnu, jež se velkoplošným
+            prosklením v průřezech starých <br /> a omlácených kontejnerů
+            otevírá svému okolí.
             <br /> <br />O stavbu se postaral tým{" "}
             <Link href="https://www.collarch.cz/" passHref>
               <a target={"_blank"}>Collarch studio.</a>
