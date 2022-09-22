@@ -1,5 +1,7 @@
 import React from "react";
+//style
 import style from "./banner.module.scss";
+//dependencies
 import Typewriter from "typewriter-effect";
 
 const Banner = () => {

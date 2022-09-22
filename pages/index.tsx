@@ -1,13 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
+//styles
+import style from "../styles/home.module.scss";
+//next
+import Link from "next/link";
+//components
 import Axonometric from "../components/Axonometric/Axonometric";
 import Banner from "../components/Banner/Banner";
 import Containers from "../components/Containers/Containers";
 import Header from "../components/Header/Header";
-import style from "../styles/home.module.scss";
+import Footer from "../components/Footer/Footer";
+//dependencies
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (

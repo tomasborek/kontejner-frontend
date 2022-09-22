@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import MenuOverlay from "../components/MenuOverlay/MenuOverlay";
-import Head from "next/head";
+//styles
 import "../styles/global.scss";
-import MenuProvider from "../contexts/MenuContext";
+//next
+import Head from "next/head";
+//components
+import MenuOverlay from "../components/MenuOverlay/MenuOverlay";
 import Loader from "../components/Loader/Loader";
+//providers
+import MenuProvider from "../contexts/MenuContext";
 
 function MyApp({ Component, pageProps }) {
   const [loader, setLoader] = useState<boolean>(true);

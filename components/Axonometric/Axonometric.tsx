@@ -1,5 +1,7 @@
 import React from "react";
+//style
 import style from "./axonometric.module.scss";
+//components
 import Reveal from "../Reveal/Reveal";
 
 const Axonometric = () => {

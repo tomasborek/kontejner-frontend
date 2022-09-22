@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+//styles
 import style from "./menuOverlay.module.scss";
+//contexts
 import { useMenu } from "../../contexts/MenuContext";
 
 const MenuOverlay = () => {

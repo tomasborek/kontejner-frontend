@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+//style
 import style from "./header.module.scss";
+//dependencies
 import { Spin as Hamburger } from "hamburger-react";
+//contexts
 import { useMenu } from "../../contexts/MenuContext";
 
 const Header = () => {
