@@ -1,4 +1,6 @@
-.header {
+@import "../../styles/variables";
+
+header.header {
   display: flex;
   align-items: center;
   width: 100%;
@@ -8,26 +10,26 @@
   transition: all 500ms;
   z-index: 5;
 
-  .hamburger {
+  & > .hamburger {
     position: absolute;
     display: grid;
     place-items: center;
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    background-color: #282828;
-    @media screen and (max-width: 750px) {
+    background-color: $levelOneGray;
+    @media screen and (max-width: $mdScreen) {
       width: auto;
       height: auto;
       padding: 0.5rem;
     }
   }
 
-  .brand {
+  & > .brand {
     flex: 1;
     display: flex;
     justify-content: center;
-    img {
+    & > img {
       width: 40px;
       user-select: none;
     }

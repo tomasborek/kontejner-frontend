@@ -8,7 +8,7 @@
   height: 2rem;
   left: 50%;
   transform: translate(-50%, 0);
-  .upper_containers {
+  & > .upper_containers {
     display: flex;
     flex-direction: column;
     transition: opacity 500ms;
@@ -17,21 +17,21 @@
     right: 0;
     width: 25vw;
     max-width: 450px;
-    @media screen and (max-width: 1500px) {
+    @media (max-width: 1500px) {
       width: 50vw;
     }
-    @media screen and (max-width: 750px) {
+    @media (max-width: 750px) {
       width: 50vw;
       right: 50%;
       transform: translateX(50%);
     }
-    .crane_hook {
+    & > .crane_hook {
       transition: all 500ms;
       width: 100%;
       z-index: 1;
       position: relative;
     }
-    .upper_container {
+    & > .upper_container {
       width: 100%;
       position: relative;
       z-index: 2;
