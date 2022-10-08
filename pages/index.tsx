@@ -43,13 +43,13 @@ const AboutSection = () => {
         <div className={style.text}>
           <h2>o stavbě</h2>
           <p>
-            "V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
+            &quot;V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
             recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
             odkazuje k průmyslové historii Holešovic. <br /> Svým obsahem
             navazuje na současné proměny této městské čtvrti. Hrubá, černá
             skořápka skrývá příjemnou městskou kavárnu, jež se velkoplošným
             prosklením v průřezech starých <br /> a omlácených kontejnerů
-            otevírá svému okolí."
+            otevírá svému okolí.&quot;
             <br /> <br />
             autor projektu{" "}
             <Link href="https://www.collarch.cz/" passHref>
