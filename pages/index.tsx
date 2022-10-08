@@ -43,14 +43,15 @@ const AboutSection = () => {
         <div className={style.text}>
           <h2>o stavbě</h2>
           <p>
-            V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
+            "V srdci Prahy 7 na Ortenově náměstí vyrostla dočasná stavba z
             recyklovaných lodních kontejnerů. Svou hrubou industriální estetikou
             odkazuje k průmyslové historii Holešovic. <br /> Svým obsahem
             navazuje na současné proměny této městské čtvrti. Hrubá, černá
             skořápka skrývá příjemnou městskou kavárnu, jež se velkoplošným
             prosklením v průřezech starých <br /> a omlácených kontejnerů
-            otevírá svému okolí.
-            <br /> <br />O stavbu se postaral tým{" "}
+            otevírá svému okolí."
+            <br /> <br />
+            autor projektu{" "}
             <Link href="https://www.collarch.cz/" passHref>
               <a target={"_blank"}>Collarch studio.</a>
             </Link>
@@ -83,10 +84,14 @@ const CoffeeSection = () => {
         <div className={style.text}>
           <h2>o kavárně</h2>
           <p>
-            Kromě unikátní budovy, se zde podává skvělá výběrová káva od
-            liberecké pražírny Nordbeans, kterou můžete zapít naše lahodné
-            deserty, snídaně či brunch. Za kvalitu našich pokrmů ručíme.
-            Zpříjemněte si den a zastavte se u nás na šálek dobré kávy.
+            V parku obklopeni zelení, nedaleko dětského hřiště, ale stále v
+            ruchu velkoměsta, se náš Kontejner stal součástí veřejného prostoru.
+            A my jsme za to vděční! Na mlýnku máme zrnka od liberecké pražírny
+            Nordbeans. Vitrínu denně nabitou sladkými i slanými dobrotami, které
+            si všechny připravujeme a pečeme sami. Od pondělí do pátku si u nás
+            také můžete užít brunch. Posezení máme jak uvnitř, tak venku,
+            dokonce i na terasách v patře. Kontejner je kavárna pro všechny,
+            kteří mají rádi život! Tak přijďte, těšíme se na vás! ♥
           </p>
         </div>
         <div ref={ref} className={style.photos}>
